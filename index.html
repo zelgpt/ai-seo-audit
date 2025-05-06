@@ -24,29 +24,19 @@
             margin-bottom: 30px;
         }
         
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .header h1 span {
-            color: #4ff8e5;
-        }
-        
-        .icon {
+        .logo-placeholder {
+            width: 180px;
+            height: 60px;
             background-color: #1a2c45;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
+            border-radius: 8px;
+            margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
             color: #4ff8e5;
+            font-weight: bold;
+            font-size: 1.2rem;
+            /* Replace this with your actual logo */
         }
         
         .audit-card {
@@ -99,22 +89,14 @@
             margin-top: 30px;
             color: rgba(255, 255, 255, 0.7);
         }
-        
-        .dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #4ff8e5;
-            margin-right: 5px;
-        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1><div class="icon">i</div> AI SEO <span>Audit</span></h1>
+            <!-- COMPANY LOGO PLACEHOLDER - Replace this with your actual logo -->
+            <div class="logo-placeholder">YOUR LOGO</div>
         </div>
         
         <div class="audit-card">
@@ -131,9 +113,19 @@
             </div>
         </div>
         
+        <!-- NOTE: ADD CHATBOT CODE HERE -->
+        <!-- For example: 
+        <script>
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.async = 1; v.src = "https://your-chatbot-url.com/embed.js"; 
+                s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+        </script>
+        -->
+        
         <div class="footer">
-            <div class="dot"></div> AI-Powered
-            <p>© 2025 AI SEO Audit Tool. All rights reserved.</p>
+            <p>© 2025 Your Company. All rights reserved.</p>
         </div>
     </div>
 </body>
