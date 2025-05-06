@@ -11,16 +11,17 @@
             padding: 0;
             background-color: #0f1627;
             color: #fff;
+            overflow: hidden; /* Prevent scrolling */
         }
         
         .container {
             max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
+            text-align: center; /* Center all text */
         }
         
         .header {
-            text-align: center;
             margin-bottom: 30px;
         }
         
@@ -56,13 +57,16 @@
             box-shadow: 0 0 20px rgba(79, 248, 229, 0.1);
             margin-bottom: 40px;
             position: relative;
-            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
         }
         
         .audit-card h2 {
             font-size: 2rem;
             margin-top: 0;
             margin-bottom: 20px;
+            text-align: center; /* Center text */
         }
         
         .audit-card h2 span {
@@ -73,45 +77,21 @@
             margin-bottom: 30px;
             line-height: 1.6;
             max-width: 600px;
-        }
-        
-        .theme-switch {
-            margin-bottom: 20px;
-            display: flex;
-            gap: 10px;
-        }
-        
-        .theme-btn {
-            padding: 8px 16px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        
-        .dark-btn {
-            background-color: #0f1627;
-            color: #fff;
-        }
-        
-        .light-btn {
-            background-color: #f5f5f5;
-            color: #1a2c45;
+            text-align: center; /* Center text */
         }
         
         .iframe-container {
             height: 600px;
-            /* NOTE: REPLIT EMBED GOES HERE */
-            /* You can replace this iframe with your Replit embed */
+            width: 100%;
+            /* Fixed position to prevent scrolling */
+            overflow: hidden;
         }
         
-        /* NOTE: CHATBOT STYLING WOULD GO HERE */
-        .chatbot-container {
-            margin-top: 30px;
-            background-color: #1a2c45;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 0 20px rgba(79, 248, 229, 0.1);
+        /* Fixed iframe styling */
+        .iframe-container iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
         }
         
         .footer {
@@ -142,34 +122,13 @@
             <h2>Is Your Website <span>Invisible</span><br>to AI-Powered Searches?</h2>
             <p>Find out instantly if your site is optimized for Google's AI Search and EEAT Guidelines.</p>
             
-            <div class="theme-switch">
-                <button class="theme-btn dark-btn" onclick="setTheme('dark')">Dark Theme</button>
-                <button class="theme-btn light-btn" onclick="setTheme('light')">Light Theme</button>
-            </div>
-            
             <div class="iframe-container">
                 <!-- NOTE: REPLACE THIS WITH YOUR REPLIT EMBED CODE -->
                 <iframe id="replitFrame" 
                     src="https://audit-funnel-gloriagunn.replit.app/?embed=true" 
-                    width="100%" 
-                    height="100%" 
-                    frameborder="0">
+                    scrolling="no"> <!-- Disabled scrolling in iframe -->
                 </iframe>
             </div>
-        </div>
-        
-        <!-- NOTE: ADD CHATBOT FORM HERE -->
-        <!-- You can add your chatbot form in a section like this: -->
-        <div class="chatbot-container">
-            <!-- Place your chatbot form/iframe code here -->
-            <!-- Example:
-            <iframe 
-                src="YOUR_CHATBOT_URL" 
-                width="100%" 
-                height="500px" 
-                frameborder="0">
-            </iframe>
-            -->
         </div>
         
         <div class="footer">
@@ -177,18 +136,5 @@
             <p>© 2025 AI SEO Audit Tool. All rights reserved.</p>
         </div>
     </div>
-    
-    <script>
-        function setTheme(theme) {
-            const frame = document.getElementById('replitFrame');
-            if (theme === 'light') {
-                frame.src = "https://audit-funnel-gloriagunn.replit.app/?embed=true&theme=light";
-            } else {
-                frame.src = "https://audit-funnel-gloriagunn.replit.app/?embed=true";
-            }
-        }
-        
-        // NOTE: ADD ANY ADDITIONAL JAVASCRIPT FOR CHATBOT HERE
-    </script>
 </body>
 </html>
