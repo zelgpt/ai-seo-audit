@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI SEO Audit</title>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f1627;
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .header h1 span {
+            color: #4ff8e5;
+        }
+        
+        .icon {
+            background-color: #1a2c45;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #4ff8e5;
+        }
+        
+        .audit-card {
+            background-color: #1a2c45;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(79, 248, 229, 0.1);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .audit-card h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        .audit-card h2 span {
+            color: #4ff8e5;
+        }
+        
+        .audit-card p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+        
+        .theme-switch {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .theme-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .dark-btn {
+            background-color: #0f1627;
+            color: #fff;
+        }
+        
+        .light-btn {
+            background-color: #f5f5f5;
+            color: #1a2c45;
+        }
+        
+        .iframe-container {
+            height: 600px;
+            /* NOTE: REPLIT EMBED GOES HERE */
+            /* You can replace this iframe with your Replit embed */
+        }
+        
+        /* NOTE: CHATBOT STYLING WOULD GO HERE */
+        .chatbot-container {
+            margin-top: 30px;
+            background-color: #1a2c45;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(79, 248, 229, 0.1);
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #4ff8e5;
+            margin-right: 5px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><div class="icon">i</div> AI SEO <span>Audit</span></h1>
+        </div>
+        
+        <div class="audit-card">
+            <h2>Is Your Website <span>Invisible</span><br>to AI-Powered Searches?</h2>
+            <p>Find out instantly if your site is optimized for Google's AI Search and EEAT Guidelines.</p>
+            
+            <div class="theme-switch">
+                <button class="theme-btn dark-btn" onclick="setTheme('dark')">Dark Theme</button>
+                <button class="theme-btn light-btn" onclick="setTheme('light')">Light Theme</button>
+            </div>
+            
+            <div class="iframe-container">
+                <!-- NOTE: REPLACE THIS WITH YOUR REPLIT EMBED CODE -->
+                <iframe id="replitFrame" 
+                    src="https://audit-funnel-gloriagunn.replit.app/?embed=true" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0">
+                </iframe>
+            </div>
+        </div>
+        
+        <!-- NOTE: ADD CHATBOT FORM HERE -->
+        <!-- You can add your chatbot form in a section like this: -->
+        <div class="chatbot-container">
+            <!-- Place your chatbot form/iframe code here -->
+            <!-- Example:
+            <iframe 
+                src="YOUR_CHATBOT_URL" 
+                width="100%" 
+                height="500px" 
+                frameborder="0">
+            </iframe>
+            -->
+        </div>
+        
+        <div class="footer">
+            <div class="dot"></div> AI-Powered
+            <p>© 2025 AI SEO Audit Tool. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <script>
+        function setTheme(theme) {
+            const frame = document.getElementById('replitFrame');
+            if (theme === 'light') {
+                frame.src = "https://audit-funnel-gloriagunn.replit.app/?embed=true&theme=light";
+            } else {
+                frame.src = "https://audit-funnel-gloriagunn.replit.app/?embed=true";
+            }
+        }
+        
+        // NOTE: ADD ANY ADDITIONAL JAVASCRIPT FOR CHATBOT HERE
+    </script>
+</body>
+</html>
