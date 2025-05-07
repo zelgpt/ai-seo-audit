@@ -114,15 +114,19 @@
         </div>
         
         <!-- NOTE: ADD CHATBOT CODE HERE -->
-        <!-- For example: 
-        <script>
-            (function(d, t) {
-                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-                v.async = 1; v.src = "https://your-chatbot-url.com/embed.js"; 
-                s.parentNode.insertBefore(v, s);
-            })(document, 'script');
-        </script>
-        -->
+ 
+      <div id="chat-root" style="z-index: 9999;position: relative;"></div> 
+      <script>
+        (function (w, d, s, o, f, js, fjs) {
+            w["Simple-Widget"] = o; w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+            js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+            js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+        }(window, document, "script", "w1", 'https://storage.googleapis.com/chat-widget-bucket/v1/widget.js'));
+        w1("init", 
+{"stackId":"stack_4dc9f7ab-97c5-4a8c-a47f-fe999e78b44c","userId":"15f9e168-508a-4fae-b9b1-fc7670f592b4","targetElementId":"chat-root"}
+);
+      </script>
+    
         
         <div class="footer">
             <p>© 2025 Your Company. All rights reserved.</p>
